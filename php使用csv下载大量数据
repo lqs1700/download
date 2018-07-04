@@ -1,22 +1,14 @@
 
 /* @stmt 需下载的数据，类型 [[ ]] 
-
 *  @head 下载数据列名 , 类型 [] 
-
 *  @filename 生成存储的文件名 
-
 */
 
 function xiazai($stmt,$head,$filename) { 
-
 set_time_limit(0); 
-
 header('Content-Type: application/vnd.ms-excel'); 
-
 header('Content-Disposition: attachment;filename='.$filename); 
-
 $fp = fopen('php://output', 'a'); 
-
 foreach ($head as $i => $v) {
   $head[$i] = $v; 
 } 
@@ -36,5 +28,6 @@ foreach ($stmt as $va){
   foreach ($va as $i => $v) { 
   $row[$i] = $v?$v:'-'; 
   } 
-fputcsv($fp, $row); 
+  
+  fputcsv($fp, $row); 
 }

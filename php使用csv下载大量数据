@@ -3,7 +3,7 @@
 
 *  @head 下载数据列名 , 类型 [] 
 
-*  @filename 文件名 
+*  @filename 生成存储的文件名 
 
 */
 

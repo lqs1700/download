@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: wx
- * Date: 2018/6/5
- * Time: 14:03
- */
 
 $file = fopen('tuisong.csv','r');
 while ($data = fgetcsv($file)) { //每次读取CSV里面的一行内容
